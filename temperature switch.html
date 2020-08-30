@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Temperature = function (num){
+        this.num = num;
+
+        this.setnum = function (num){
+            this.setnum = num;
+        }
+
+        this.convertF = function (){
+            return  this.num * 1.8 + 32;
+        }
+        this.convertK = function (){
+            return this.num + 273.15;
+        }
+    }
+    let teamp = new Temperature();
+    this.setnum = parseInt(prompt("nhập vào độ c"));
+    document.write("độ f = " +teamp.convertF() + "<br>");
+    document.write("độ k = " + teamp.convertK())
+</script>
+</body>
+</html>
